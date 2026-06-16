@@ -1,2 +1,2 @@
 # hello world
-[hello world](/mdnsvpn/faq)
+[hello world](/mdnsvpn/faq.md)
