@@ -36,13 +36,17 @@
 
 Подключитесь к машине по ssh, выполните скрипт для установки, который подготовил автор проекта:
 
-`bash <(curl -Ls https://raw.githubusercontent.com/masterking32/MasterDnsVPN/main/server_linux_install.sh)`
+```bash
+bash <(curl -Ls https://raw.githubusercontent.com/masterking32/MasterDnsVPN/main/server_linux_install.sh)
+```
 
 Дождитесь, пока скрипт сделает свою работу и выведет в терминал следующие строки:
 
-`Configuration
+```bash
+Configuration
 Attention: Set your NS domain.
-Enter your Domain (e.g. vpn.example.com):`
+Enter your Domain (e.g. vpn.example.com):
+```
 
 Здесь мы указываем наш домен под NS записью (если воспользовались инструкцией по регистрации домена через Digiplate+Cloudflare, то в нашем случае это будет **v.example.dpdns.org**)
 
@@ -98,7 +102,9 @@ Enter your Domain (e.g. vpn.example.com):`
 
 Во вкладке **Tunnel Identity & Security** укажите свой домен (v.example.dpdns.org) и **ENCRYPTION_KEY**, который был ранее скопирован из терминала.
 
-Сохраните конфиг, нажмите Start. Приложение просканирует DNS резолверы на доступность. По окончанию сканирования телефон разок завибрирует, будет указано кол-во доступных резолверов и локальный SOCKS5 localhost:18000. Если при конфигурации профиля выбран TUN, то можно сразу проверять работоспособность. 
+Сохраните конфиг, нажмите Start. Приложение просканирует DNS резолверы на доступность. 
+
+По окончанию сканирования телефон разок завибрирует, будет указано кол-во доступных резолверов и локальный SOCKS5 localhost:18000. Если при конфигурации профиля выбран TUN, то можно сразу проверять работоспособность. 
 
 Если вы выбрали SOCKS5 – пропишите IP:PORT в нужном приложении и проверьте работу через прокси.
 
@@ -113,3 +119,9 @@ Under construction, sorry!
 ## 3. Тонкая настройка клиента
 
 Under construction, sorry!
+
+
+
+
+
+[Вернуться на главную страницу](sinekdoxa.github.io)

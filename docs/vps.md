@@ -32,9 +32,9 @@
 
 **Где покупать?** На ваше усмотрение. Если нет идей, рассмотрите варианты на сайтах:
 
-`[hostinger.com](hostinger.com)`
+`[hostinger.com](https://hostinger.com)`
 
-`[gen.xyz/number](gen.xyz/number)`
+`[gen.xyz/number](https://gen.xyz/number)`
 
 Если вы желаете остаться анонимным и/или не хотите светить паспортными данными/номерами кредитных карт при покупке домена, можно сделать домен на год бесплатно (и заодно проигнорировать два вышеуказанных требования, лол). 
 
@@ -42,27 +42,33 @@
 
 Для этого регистрируемся на сайте:
 
-`[domain.digitalplat.org](domain.digitalplat.org)`
+`[domain.digitalplat.org](https://domain.digitalplat.org)`
 
 После прохождения KYC создаем домен 3-го уровня, выбрав **dpdns.org**. 
 
 Затем, регистрируется/авторизовываемся на сайте:
 
-`[dash.cloudflare.com](dash.cloudflare.com)` 
+`[dash.cloudflare.com](https://dash.cloudflare.com)` 
 
 Во вкладке Domains добавляем свежесозданный домен, получаем неймсервера, прописываем их на digitalplat.org.
 
 Затем, заходим в управление доменом в Cloudflare, открываем вкладку DNS > Records, создаем две записи:
 
-`Тип: A
+```bash
+Тип: A
 Имя: короткое, например ns
 Значение: IPv4 адрес сервера
-Пример: ns.example.com -> 1.2.3.4`
+Пример: ns.example.com -> 1.2.3.4
+```
 
-`Тип: NS
+```bash
+Тип: NS
 Имя: сабдомен для туннеля, например v
 Значение: ns.example.com
-Пример: v.example.com -> ns.example.com`
+Пример: v.example.com -> ns.example.com
+```
+
+
 
 ***При создании А записи на Cloudflare в столбике Proxy status перевести флажок в положение Off, Proxied сменится на DNS only. ***
 
