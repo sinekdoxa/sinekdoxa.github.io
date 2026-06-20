@@ -1,6 +1,6 @@
 # Общие требования к доменам и VPS
 
-*Последний раз отредактировано: 17.06.2026*
+*Последний раз отредактировано: 20.06.2026*
 
 **Требования для VPS:**
 
@@ -32,9 +32,9 @@
 
 **Где покупать?** На ваше усмотрение. Если нет идей, рассмотрите варианты на сайтах:
 
-`[hostinger.com](https://hostinger.com)`
+[hostinger.com](https://hostinger.com)
 
-`[gen.xyz/number](https://gen.xyz/number)`
+[gen.xyz/number](https://gen.xyz/number)
 
 Если вы желаете остаться анонимным и/или не хотите светить паспортными данными/номерами кредитных карт при покупке домена, можно сделать домен на год бесплатно (и заодно проигнорировать два вышеуказанных требования, лол). 
 
@@ -42,13 +42,13 @@
 
 Для этого регистрируемся на сайте:
 
-`[domain.digitalplat.org](https://domain.digitalplat.org)`
+[domain.digitalplat.org](https://domain.digitalplat.org)
 
 После прохождения KYC создаем домен 3-го уровня, выбрав **dpdns.org**. 
 
 Затем, регистрируется/авторизовываемся на сайте:
 
-`[dash.cloudflare.com](https://dash.cloudflare.com)` 
+[dash.cloudflare.com](https://dash.cloudflare.com)
 
 Во вкладке Domains добавляем свежесозданный домен, получаем неймсервера, прописываем их на digitalplat.org.
 
