@@ -9,9 +9,6 @@
 [О DNS-резолверах и где их взять.](resolvers.md)
 
 
-
-[Ссылка на репозиторий](https://github.com/anonvector/slipgate)
-
 **Slipgate** - Единый менеджер туннелей для серверов Linux. Управляет DNS-туннелями (DNSTT, NoizDNS, Slipstream, VayDNS) и HTTPS-прокси (NaiveProxy) через сервисы systemd, поддерживает маршрутизацию DNS через несколько туннелей и управление пользователями. Предназначен для использования с Android VPN-приложением [SlipNet](https://github.com/anonvector/SlipNet).
 
 *Возможности:*
@@ -42,7 +39,7 @@
 
 - **Передача конфигурации клиенту**: генерация URI вида `slipnet://` для импорта настроек в приложение одним нажатием
 
-
+[Ссылка на репозиторий](https://github.com/anonvector/slipgate)
 
 **Если вы уже разворачивали схожие проекты на своем сервере (например, [MasterDnsVPN](masterdnsvpn.md)), остановите сервис командой** `systemctl stop masterdnsvpn.service` **во избежание проблем.**
 
@@ -184,18 +181,19 @@ curl -fsSL https://raw.githubusercontent.com/anonvector/slipgate/main/install.sh
 3. **500 Кбайт/с это несерьезно, хочу еще быстрее!** Используйте [MasterDnsVPN](masterdnsvpn.md) либо воспользуйтесь инструкцией [Проверка резолверов на скорость](speedtest.md)  (но софт разработан под сервер с MasterDnsVPN, ололо)
 
 4. **Я наигрался со slipgate и хочу вернуться на MasterDnsVPN!** 
-- В первую очередь остановите сервисы туннеля и dnsrouter самого slipgate. 
+
+* В первую очередь остановите сервисы туннеля и dnsrouter самого slipgate. 
   
-  - Для начала, остановите туннель: `slipgate > Tunnels > Stop tunnel > название туннеля`.
+  * Для начала, остановите туннель: `slipgate > Tunnels > Stop tunnel > название туннеля`.
   
-  - Затем, остановите slipgate-dnsrouter.service командой: `systemctl stop slipgate-dnsrouter.service`
+  * Затем, остановите slipgate-dnsrouter.service командой: `systemctl stop slipgate-dnsrouter.service`
   
-  - Остановите смежные сервисы, требующиеся для работы slipgate: `systemctl stop slipgate-socks5.service` и `systemctl stop slipgate-warp.service`
+  * Остановите смежные сервисы, требующиеся для работы slipgate: `systemctl stop slipgate-socks5.service` и `systemctl stop slipgate-warp.service`
 
-- Запустите MasterDnsVPN: `systemctl start masterdnsvpn.service`. 
+* Запустите MasterDnsVPN: `systemctl start masterdnsvpn.service`. 
 
-- Убедитесь, что сервис работает, выполнив:`journalctl -u masterdnsvpn.service -f`  Вы должны увидеть эту строку: `06/22 10:16:36 [MasterDnsVPN Server] [INFO] 📡 UDP Listener Ready, Addr: 0.0.0.0:53, Readers: 6, Workers: 10, Queue: 32768, Sockets: 6`
+  * Убедитесь, что сервис работает, выполнив:`journalctl -u masterdnsvpn.service -f`  Вы должны увидеть эту строку: `06/22 10:16:36 [MasterDnsVPN Server] [INFO] 📡 UDP Listener Ready, Addr: 0.0.0.0:53, Readers: 6, Workers: 10, Queue: 32768, Sockets: 6`
 
-
+[Вернуться на главную страницу](sinekdoxa.github.io)
 
 
