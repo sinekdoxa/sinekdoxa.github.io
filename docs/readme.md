@@ -31,9 +31,9 @@
 
 * [Общие требования к доменам и VPS](vps.md)
   
-  * Создание бесплатного домена на domain.digitalplat.org и создание DNS записей на Cloudflare
+  * [Создание бесплатного домена на domain.digitalplat.org и создание DNS записей на Cloudflare](vps.md#создание-бесплатного-домена-на-domaindigitalplatorg-и-создание-dns-записей-на-cloudflare)
   
-  * Создание бесплатных домена и DNS записей на dnsexit.com
+  * [Создание бесплатных домена и DNS записей на dnsexit.com](vps.md#создание-бесплатных-домена-и-dns-записей-на-dnsexitcom)
 
 * [Все о DNS-резолверах](resolvers.md)
   
