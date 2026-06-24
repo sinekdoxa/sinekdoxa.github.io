@@ -9,6 +9,7 @@
 [О DNS-резолверах и где их взять.](resolvers.md)
 
 
+
 **Slipgate** - Единый менеджер туннелей для серверов Linux. Управляет DNS-туннелями (DNSTT, NoizDNS, Slipstream, VayDNS) и HTTPS-прокси (NaiveProxy) через сервисы systemd, поддерживает маршрутизацию DNS через несколько туннелей и управление пользователями. Предназначен для использования с Android VPN-приложением [SlipNet](https://github.com/anonvector/SlipNet).
 
 *Возможности:*
@@ -41,9 +42,11 @@
 
 [Ссылка на репозиторий](https://github.com/anonvector/slipgate)
 
-**Если вы уже разворачивали схожие проекты на своем сервере (например, [MasterDnsVPN](masterdnsvpn.md)), остановите сервис командой** `systemctl stop masterdnsvpn.service` **во избежание проблем.**
+**
 
 ## Установка на сервере
+
+**Внимание! Если вы уже разворачивали схожие проекты на своем сервере (например, [MasterDnsVPN](masterdnsvpn.md)), остановите сервис командой** `systemctl stop masterdnsvpn.service` **во избежание проблем.
 
 ### slipstream
 
@@ -142,8 +145,6 @@ curl -fsSL https://raw.githubusercontent.com/anonvector/slipgate/main/install.sh
 
 На этом установка завершена. Можно пробовать подключиться к серверу.
 
-
-
 ### Установка других транспортов
 
 Выполните `slipgate` в терминале. 
@@ -151,8 +152,6 @@ curl -fsSL https://raw.githubusercontent.com/anonvector/slipgate/main/install.sh
 Выберите пункт `7. Install (advanced)` и следуйте указаниям скрипта.
 
 Важно уточнить, что для каждого туннеля требуется свой поддомен. Если планируете экспериментировать и/или держать несколько транспортов на одной VPS, предварительно создайте NS записи. [Подробнее в мануале на утилиту.](https://github.com/anonvector/slipgate#domain-layout)
-
-
 
 ## Настройка на клиенте
 
@@ -170,8 +169,6 @@ curl -fsSL https://raw.githubusercontent.com/anonvector/slipgate/main/install.sh
 
 Теперь пробуйте выйти в интернет и замерить скорость.
 
-
-
 ## Ответы на некоторые вопросы
 
 1. **Будет ли работать, если получился микс из резолверов, например Score 5/6 и Score 6/6?** Да, будет, но медленнее, чем могло быть.
@@ -181,7 +178,6 @@ curl -fsSL https://raw.githubusercontent.com/anonvector/slipgate/main/install.sh
 3. **500 Кбайт/с это несерьезно, хочу еще быстрее!** Используйте [MasterDnsVPN](masterdnsvpn.md) либо воспользуйтесь инструкцией [Проверка резолверов на скорость](speedtest.md)  (но софт разработан под сервер с MasterDnsVPN, ололо)
 
 4. **Я наигрался со slipgate и хочу вернуться на MasterDnsVPN!** 
-
 * В первую очередь остановите сервисы туннеля и dnsrouter самого slipgate. 
   
   * Для начала, остановите туннель: `slipgate > Tunnels > Stop tunnel > название туннеля`.
@@ -191,9 +187,7 @@ curl -fsSL https://raw.githubusercontent.com/anonvector/slipgate/main/install.sh
   * Остановите смежные сервисы, требующиеся для работы slipgate: `systemctl stop slipgate-socks5.service` и `systemctl stop slipgate-warp.service`
 
 * Запустите MasterDnsVPN: `systemctl start masterdnsvpn.service`. 
-
+  
   * Убедитесь, что сервис работает, выполнив:`journalctl -u masterdnsvpn.service -f`  Вы должны увидеть эту строку: `06/22 10:16:36 [MasterDnsVPN Server] [INFO] 📡 UDP Listener Ready, Addr: 0.0.0.0:53, Readers: 6, Workers: 10, Queue: 32768, Sockets: 6`
 
 [Вернуться на главную страницу](sinekdoxa.github.io)
-
-

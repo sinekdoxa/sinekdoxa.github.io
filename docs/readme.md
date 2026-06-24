@@ -30,6 +30,10 @@
 **Содержание:**
 
 * [Общие требования к доменам и VPS](vps.md)
+  
+  * Создание бесплатного домена на domain.digitalplat.org и создание DNS записей на Cloudflare
+  
+  * Создание бесплатных домена и DNS записей на dnsexit.com
 
 * [Все о DNS-резолверах](resolvers.md)
   
@@ -45,26 +49,28 @@
   
   * [Настройка на клиенте](masterdnsvpn.md#2-настройка-на-клиенте)
     
-    * [Windows](masterdnsvpn.md#21-windowslinux)
+    * [Windows/Linux](masterdnsvpn.md#21-windowslinux)
     
     * [Android (MasterDnsVpn-GG)](masterdnsvpn.md#22-android-masterdnsvpn-gg)
     
-    * [iOS (zanoza)](masterdnsvpn.md#23-ios-zanoza)
+    * [Android (WhiteDNS)](masterdnsvpn.md#23-android-whitedns)
+    
+    * [iOS (zanoza)](masterdnsvpn.md#24-ios-zanoza)
   
   * [Тонкая настройка клиента](masterdnsvpn.md#3-тонкая-настройка-клиента)
 
 * [Slipgate - инструкция по развертыванию на сервере и настройка клиента](slipgate.md)
-
+  
   * [Установка на сервере](slipgate.md#Установка-на-сервере)
-
+    
     * [slipstream](slipgate.md#slipstream)
-
+    
     * [Установка других транспортов](slipgate.md#Установка-других-транспортов)
-
+  
   * [Настройка на клиенте](slipgate.md#Настройка-на-клиенте])
-
+    
     * [SlipNet](slipgate.md#SlipNet)
-
+  
   * [Ответы на некоторые вопросы](slipgate.md#Ответы-на-некоторые-вопросы)
 
 * [Проверка резолверов на скорость](speedtest.md)
@@ -75,19 +81,22 @@
   
   * [Делим трафик на RU и Global](warp.md#делим-трафик-на-ru-и-global)
 
-
-
 *Контактная информация:*
 
 **Email/Jabber:** забыл
 
 **Пожелания, замечания по инструкции:** оставляйте в [Issues](https://github.com/sinekdoxa/sinekdoxa.github.io/issues) этого репозитория
 
-
-
 *Last updates:*
 
 - 21.06.26 - [warp.md](warp.md): Поправил inbound ip для xray с 0.0.0.0 -> 127.0.0.1 (я чета тупанул и согласно конфигу любой мог подключиться к SOCKS прокси извне, лол)
+
 - 22.06.26 - [slipgate.md](slipgate.md): Написана инструкция для slipgate с поднятием сервера на slipstream + мануал по подключению через SlipNet
+
+- 24.06.26 
+  
+  - [vps.md](vps.md): Добавил варианты, где можно купить VPS; добавлена инструкция для [dnsexit.com](https://dnsexit.com/) (*credits to @robot_Vecto_XIYIX_Vecto_robot*); поделил статью на разделы
+  
+  - [masterdnsvpn.md](masterdnsvpn.md): Написана инструкция для клиента [WhiteDNS](masterdnsvpn.md#23-android-whitedns)
 
 
