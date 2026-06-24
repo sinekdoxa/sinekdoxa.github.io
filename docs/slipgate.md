@@ -42,11 +42,11 @@
 
 [Ссылка на репозиторий](https://github.com/anonvector/slipgate)
 
-**
+
 
 ## Установка на сервере
 
-**Внимание! Если вы уже разворачивали схожие проекты на своем сервере (например, [MasterDnsVPN](masterdnsvpn.md)), остановите сервис командой** `systemctl stop masterdnsvpn.service` **во избежание проблем.
+**Внимание! Если вы уже разворачивали схожие проекты на своем сервере (например, [MasterDnsVPN](masterdnsvpn.md)), остановите сервис командой** `systemctl stop masterdnsvpn.service` **во избежание проблем.**
 
 ### slipstream
 

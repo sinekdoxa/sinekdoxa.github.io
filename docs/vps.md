@@ -78,7 +78,7 @@
 Пример: v.example.com -> ns.example.com
 ```
 
-***При создании А записи на Cloudflare в столбике Proxy status перевести флажок в положение Off, Proxied сменится на DNS only. ***
+***При создании А записи на Cloudflare в столбике Proxy status перевести флажок в положение Off, Proxied сменится на DNS only.***
 
 В итоге должно получиться так:
 
@@ -111,6 +111,8 @@
 ![@](https://github.com/sinekdoxa/sinekdoxa.github.io/blob/main/docs/pics/dnsexit3.jpg?raw=true)
 
 ![@](https://github.com/sinekdoxa/sinekdoxa.github.io/blob/main/docs/pics/dnsexit4.jpg?raw=true)
+
+![@](https://github.com/sinekdoxa/sinekdoxa.github.io/blob/main/docs/pics/dnsexit5.jpg?raw=true)
 
 
 
